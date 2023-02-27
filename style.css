@@ -1,0 +1,559 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+header button {
+    border: none;
+    background-color: white;
+    color: orange;
+    border-radius: 22px;
+    padding: 0 15px;
+    min-height: 30px;
+    font-weight: 700;
+    box-shadow: 0 0 20px 1px #c1bfbf;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/*banner container*/
+
+.banner_container {
+    display: flex;
+    margin: 120px 200px;
+}
+
+.banner_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.banner_text {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.banner_text h2::before {
+    content: 'ПОПУЛЯРНЫЙ СЕГМЕНТ, ГИБКИЕ ЦЕНЫ';
+    display: block;
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+}
+
+.banner_button {
+    position: relative;
+    width: 50%;
+}
+
+.banner_button input {
+    border: none;
+    box-shadow: 0 0 10px 2px #e6e6e6;
+    border-radius: 22px;
+    padding: 10px;
+    width: 100%;
+}
+
+.banner_button button {
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    font-weight: 700;
+}
+
+.banner_img {
+    position: relative;
+}
+
+#topImg {
+    position: absolute;
+    top: -140px;
+    right: 50%;
+}
+
+#leftImg {
+    position: absolute;
+    left: -50px;
+    bottom: 80px;
+}
+
+/*advantage container*/
+
+.advantage_container {
+    margin: 100px 250px;
+    position: relative;
+}
+
+#AdvLeftImg {
+    position: absolute;
+    left: -100px;
+    top: 30%;
+    transform: rotate(310deg);
+}
+
+#AdvRightImg {
+    position: absolute;
+    right: -70px;
+    bottom: 15%;
+}
+
+.advantage_container h2 {
+    font-size: 30px;
+    width: 50%;
+    position: relative;
+}
+
+#line {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    border-top: 3px solid orange;
+}
+
+.advantage_container h2:after {
+    content: 'ПОЧЕМУ';
+    display: block;
+    color: grey;
+    opacity: 0.1;
+    font-weight: 700;
+    font-size: 200px;
+    
+    position: absolute;
+    top: -120px;
+    left: 100px;
+}
+
+.advantage_text {
+    display: flex;
+}
+
+.advantage_text_item {
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#line2 {
+    position: absolute;
+    top: 27px;
+}
+
+.advantage_text_item span {
+    font-weight: 700;
+}
+
+.advantage_text_item p {
+    width: 80%;
+    color: grey;
+}
+
+.advantage_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 30px;
+}
+
+.advantage_item span {
+    color:orange;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.advantage_item p {
+    color: grey;
+}
+
+/* indicator container */
+
+.indicator_container {
+    padding: 50px 200px;
+    background-color: #edeef0;
+}
+
+.indicator_container h2 {
+    text-align: center;
+}
+
+.indicator_sity {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.triangle {
+    position: relative;
+}
+
+.border {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: orange;
+    position: absolute;
+    bottom: -30px;
+    left: 30%
+    
+}
+
+#allSity {
+    background-color: orange;
+    color: #fff;
+    margin: 0 20px;
+}
+
+
+
+.indicator_sity p {
+    margin: 0 20px;
+    padding: 15px;
+    color: grey;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #e6e6e6;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.indicator_block {
+    display: flex;
+    padding: 0 200px;
+}
+
+.indicator_line {
+    background: #fff;
+    padding: 20px 0 20px 40px;
+    margin-right: 30px;
+}
+
+.indicator_line h3 {
+    color: grey;
+}
+
+.indicator_line_item {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+}
+
+.indicator_line_item p:first-of-type {
+    width: 8vw;
+}
+
+.line {
+    background-color: grey;
+    width: 200px;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.indicator_line_item:first-of-type .line:after {
+    content: '';
+    background: green;
+    width: 9%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.indicator_line_item:nth-of-type(2) .line:after {
+    content: '';
+    background: blue;
+    width: 40%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.indicator_line_item:nth-of-type(3) .line:after {
+    content: '';
+    background: orange;
+    width: 23%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.indicator_line_item:nth-of-type(4) .line:after {
+    content: '';
+    background: purple;
+    width: 15%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.indicator_line_item:nth-of-type(5) .line:after {
+    content: '';
+    background: red;
+    width: 12%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.indicator_rating_item {
+    padding: 5px 0;
+}
+
+.indicator_rating p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 30px;
+    color: grey ;
+}
+
+.indicator_rating span {
+    font-size: 16px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.indicator_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.indicator_button_item {
+    position: relative;
+    width: 40%;
+}
+
+.indicator_button_item input {
+    border: none;
+    box-shadow: 0 0 15px 5px #e6e6e6;
+    border-radius: 22px;
+    padding: 10px;
+    width: 100%;
+}
+
+.indicator_button_item button {
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    font-weight: 700;
+}
+
+/*rating container*/
+
+.rating_container {
+    margin: 40px 400px;
+    text-align: center;
+    position: relative;
+}
+
+#RatingRightImg {
+    position: absolute;
+    right: -200px;
+}
+
+#RatingLeftImg {
+    position: absolute;
+    left: -200px;
+    bottom: 50px;
+    transform: rotate(310deg);
+}
+
+.rating_table {
+    display: flex;
+    justify-content: center;
+}
+
+.rating_table table {
+    width: 100vw;
+}
+
+.rating_table table thead {
+    color: grey;   
+}
+
+.rating_table table thead tr th {
+    text-align: start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.rating_table table tbody tr td:nth-child(2) {
+    color: grey;
+}
+
+.rating_table table tbody tr td {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.rating_table table tbody tr td:last-child {
+    text-align: end;
+}
+
+.rating_table table tbody tr:nth-child(1) td img, tr:nth-child(2) td img, tr:nth-child(5) td img {
+    transform: rotate(180deg);
+}
+
+.rating_table table tbody {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rating_table table thead th:last-child {
+    text-align: end;
+}
+
+/*marketing container*/
+
+.marketing_container {
+    background-color: #edeef0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.marketing_block {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 20px 200px;
+    padding: 40px;
+    width: 60%;
+}
+
+.marketing_text_item {
+    display: flex;
+    position: relative;
+}
+
+.marketing_text h4 {
+    color: grey;
+    margin: 0;
+}
+
+.marketing_text_item p {
+    margin-left: 40px;
+    width: 90%;
+}
+
+.marketing_text_item span {
+    position: absolute;
+    top: 17px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+
+.marketing_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.marketing_button_item {
+    margin: 20px 0;
+    background-color: orange;
+    padding: 30px 185px 70px 185px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketing_button_item h3 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.marketing_button_item input {
+    border: none;
+    border-radius: 22px;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.marketing_button_item button {
+    border: none;
+    border-radius: 22px;
+    padding: 11px 20px;
+    background-color: green;
+    color: #fff;
+    position: absolute;
+    right: 22%;
+    top: 56%;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: orange;
+    margin-top: 0px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0 10px;
+}
+
